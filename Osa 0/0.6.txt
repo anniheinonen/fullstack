@@ -1,0 +1,11 @@
+note over selain:
+selain suorittaa js-koodin, joka luo uuden muistiinpanon,
+lisää sen muistiinpanojen listaan, 
+piirtää ruudun sisällön uudelleen ja 
+lähettää uuden muistiinpanon palvelimelle
+end note
+
+
+selain->palvelin: HTTP POST [{ content: "uusi muistiinpano", date: "2020-07-24" }]
+palvelin-->selain: 201 created
+
